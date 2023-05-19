@@ -178,9 +178,51 @@ nav a {
 
     .main-inner-services{
         flex: 1 1 300px;
-        padding: 1rem;
+        padding: 2rem;
+        box-shadow: var(--box-shadow);
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+
     }
 
     .main-inner-services .service-img img{
         width: 100%;
+    }
+
+    .service-content
+    {
+        text-align: center;
+        background-color: white;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding: 4rem 0;
+    }
+
+
+    .service-content h2
+    {
+        font-size: 22px;
+        padding: 1rem 0;
+    }
+
+    .service-content p
+    {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        line-height: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .service-content a{
+        padding: 1.5rem 3rem;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        color: white;
+        background: var(--button-color);
+        transition: 0.8s;
+    }
+
+    .service-content a:hover
+    {
+        border: 0;
     }
