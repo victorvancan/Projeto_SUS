@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+:root {
+    --color: #1ebeb6;
+    --primar-color: #efbb20;
+    --navbar-color: #2c353d;
+    --button-color: linear-gradient(90deg, rgba(30, 190, 182, 1) 0%, rgba(0, 130, 120, 1) 0%);
+    --box-shadow: 0 0 10px #e7e7e7e;
+    --backgorund: #f7f7f7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--color);
+    width: 100%;
+    padding: 1.5rem 7%;
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 1.5rem;
+    text-decoration: none;
+}
+
+.menu-de-icones div {
+    color: white;
+    font-size: 2rem;
+}
+
+#menu-bar {
+    display: none;
+
+}
+
+.home {
+    padding: 2rem 7%;
+    width: 100%;
+    background: var(--backgorund);
+}
+
+.main-home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 6%;
+}
+
+.main-inner-home {
+    flex: 1 1 45rem;
+}
+
+.main-inner-home h2 {
+    font-size: 40px;
+    font-weight: 500;
+    padding: 0.5rem 0;
+}
+
+.main-inner-home h1 {
+    font-size: 40px;
+    padding-bottom: 2rem;
+    font-weight: 700;
+}
+
+.main-inner-home p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+
+}
+
+.main-inner-home .rigth-content-img img {
+    width: 100%;
+    padding: 4rem;
+}
+
+.home-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.013;
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    #menu-bar {
+        display: initial;
+
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        background: var(--color);
+        width: 100%;
+        height: 100vh;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    nav a {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem;
+        margin: 1rem;
+        border: 3px solid var(--backgorund);
+        border-radius: 10px;
+        background: var(--button-color);
+    }
+
+    .main-inner-home {
+        padding-top: 16rem;
+    }
+
+    .main-inner-home .rigth-content-img img {
+        padding: 2rem;
+    }
+
+
+}
+
+
+    /*Services Section*/
+
+    .services {
+        padding: 2rem 7%;
+        width: 100%;
+        background-color: var(--backgorund);
+    }
+
+    .service-heading h1{
+        text-align: center;
+        font-size: 40px;
+        padding-bottom: 3rem;
+    }
+
+    .service-heading span{
+        color: #1ebeb6;
+    }
+
+    .main-services{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .main-inner-services{
+        flex: 1 1 300px;
+        padding: 1rem;
+    }
+
+    .main-inner-services .service-img img{
+        width: 100%;
+    }
