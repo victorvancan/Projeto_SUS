@@ -33,6 +33,10 @@ header {
     align-items: center;
 }
 
+body {
+    background: #f7f7f7;
+}
+
 nav a {
     color: white;
     font-size: 1.5rem;
@@ -40,12 +44,13 @@ nav a {
     text-decoration: none;
 }
 
+
 .menu-de-icones div {
     color: white;
     font-size: 2rem;
 }
 
-#menu-bar {
+.menu-bar {
     display: none;
 
 }
@@ -116,16 +121,16 @@ nav a {
 
     }
 
-    .navbar {
+    .nav {
         position: absolute;
         top: 100%;
-        left: 0%;
+        left: -100%;
         background: var(--color);
         width: 100%;
         height: 100vh;
     }
 
-    .navbar.active {
+    .nav.active {
         left: 0;
     }
 
@@ -151,78 +156,207 @@ nav a {
 }
 
 
-    /*Services Section*/
+/*areas Section*/
 
-    .services {
-        padding: 2rem 7%;
-        width: 100%;
-        background-color: var(--backgorund);
-    }
+.areas {
+    padding: 2rem 7%;
+    width: 100%;
+    background-color: var(--backgorund);
+}
 
-    .service-heading h1{
-        text-align: center;
-        font-size: 40px;
-        padding-bottom: 3rem;
-    }
+.areas-heading h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 3rem;
+}
 
-    .service-heading span{
-        color: #1ebeb6;
-    }
+.areas-heading span {
+    color: #1ebeb6;
+}
 
-    .main-services{
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
+.main-areas {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
-    .main-inner-services{
-        flex: 1 1 300px;
-        padding: 2rem;
-        box-shadow: var(--box-shadow);
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+.main-inner-areas {
+    flex: 1 1 300px;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 
-    }
+}
 
-    .main-inner-services .service-img img{
-        width: 100%;
-    }
+.main-inner-areas .areas-img img {
+    width: 100%;
+}
 
-    .service-content
-    {
-        text-align: center;
-        background-color: white;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        padding: 4rem 0;
-    }
+.areas-content {
+    text-align: center;
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 4rem 0;
+}
 
 
-    .service-content h2
-    {
-        font-size: 22px;
-        padding: 1rem 0;
-    }
+.areas-content h2 {
+    font-size: 22px;
+    padding: 1rem 0;
+}
 
-    .service-content p
-    {
-        font-size: 1.5rem;
-        padding: 1rem 0;
-        line-height: 2.5rem;
-        margin-bottom: 2rem;
-    }
+.areas-content p {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2.5rem;
+    margin-bottom: 2rem;
+}
 
-    .service-content a{
-        padding: 1.5rem 3rem;
-        border-radius: 15px;
-        font-size: 1.5rem;
-        color: white;
-        background: var(--button-color);
-        transition: 0.8s;
-    }
+.areas-content a {
+    padding: 1.5rem 3rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    color: white;
+    background: var(--button-color);
+    transition: 0.8s;
+}
 
-    .service-content a:hover
-    {
-        border: 0;
-    }
+.areas-content a:hover {
+    border-radius: 0;
+}
+
+.alguns-SUS {
+    padding: 2rem 7%;
+}
+
+.heading-SUS {
+    text-align: center;
+}
+
+.heading-SUS h1 {
+    font-size: 40px;
+    padding: 2rem;
+}
+
+.heading-SUS h1 span {
+    color: var(--color);
+}
+
+.main-SUS {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.main-inner-SUS {
+    flex: 1 1 45rem;
+}
+
+.main-inner-SUS img {
+    width: 100%;
+}
+
+.conteudo-SUS {
+    padding: 0 4rem;
+}
+
+.conteudo-SUS h2 {
+    font-size: 25px;
+    padding: 4rem 0;
+}
+
+.conteudo-SUS p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+
+.conteudo-SUS a {
+    padding: 2rem 4rem;
+    background: var(--button-color);
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.5s;
+}
+
+.conteudo-SUS a:hover {
+    border-radius: 15px;
+}
+
+
+.nosso-servicos {
+    padding: 3rem 7%;
+    width: 100%;
+}
+
+.servicos-heading {
+    text-align: center;
+}
+
+.servicos-heading h1 {
+    font-size: 40px;
+}
+
+.servicos-heading h1 span {
+    color: var(--color);
+}
+
+/*carrosel de imagens*/
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagem-conteudo {
+    padding: 2rem 0;
+}
+
+.footer {
+    padding: 3rem 7%;
+    background: var(--color);
+}
+
+.main-footer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.main-inner-footer {
+    flex: 1 1 300px;
+}
+
+.main-inner-footer h2{
+    font-size: 22px;
+    color: white;
+}
+
+.main-inner-footer a{
+    font-size: 22px;
+    display: inline;
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+}

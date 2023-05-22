@@ -1,5 +1,5 @@
 let menubar = document.querySelector('#menu-bar')
-let mynav = document.querySelector('.navbar')
+let mynav = document.querySelector('.nav')
 
 
 
