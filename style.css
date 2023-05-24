@@ -360,3 +360,23 @@ nav a {
     padding: 1rem;
     color: white;
 }
+
+.mapa{
+    position: relative;
+    width: 2200px ;
+    height: 500px;
+    background: white;
+}
+
+
+.mapa-heading {
+    text-align: center;
+}
+
+.mapa-heading h2 {
+    font-size: 28px;
+}
+
+.mapa-heading h2 span {
+    color: var(--color);
+}
