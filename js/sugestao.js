@@ -11,5 +11,11 @@ let suggestions = [
     "Pediatria",
     "Saude da mulher",
     "SUS",
-    "Exames"
+    "Exames",
+    "Hospitais proximos a mim",
+    "Clinica de Saude",
+    "UBS",
+    "Hospital",
+    "Pronto Atendimento",
+    "Consultas medicas",
 ];
